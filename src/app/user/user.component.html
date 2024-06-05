@@ -1,0 +1,15 @@
+<!-- Purpose:to output dynamic This file is the html file for the user component. It displays the user's avatar and name.
+avatar is done by property binding 
+and name by string interpolation -->
+<div>
+    <button [class.active]="selected" (click)="onSelectUser()">
+        <img 
+        [src]="imagePath"
+        [alt]="user.name"
+        /> 
+        <span>
+            {{user.name}}
+        </span>
+        </button>
+    </div>
+        
